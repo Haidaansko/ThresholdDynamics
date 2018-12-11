@@ -15,7 +15,7 @@ def rec_rule(grid, f):
     return np.sum((right - left) * f_v((left + right) / 2))
 
 
-def trap_rule(grid):
+def trap_rule(grid, f):
     if f is not None:
         left = grid[:-1]
         right = grid[1:]
